@@ -1,0 +1,68 @@
+mongod --version 
+
+mongosh --version 
+
+mongosh
+
+use DATABASENAME 
+eg. use 28thAUGUST 
+
+show dbs
+
+db.createCollection("User")
+
+
+db.myNewCollection.insertOne({ name: "User" })
+
+db.user.insertMany([
+    { name: "Alice", age: 30, subject: "Mathematics", marks: 95 },
+    { name: "Bob", age: 28, subject: "Physics", marks: 88 },
+    { name: "Carol", age: 35, subject: "Chemistry", marks: 92 },
+    { name: "David", age: 22, subject: "Biology", marks: 84 },
+    { name: "Eva", age: 27, subject: "Computer Science", marks: 91 }
+])
+
+db.student.insertMany([
+    { name: "Frank", age: 21, subject: "Mathematics", marks: 90 },
+    { name: "Grace", age: 23, subject: "Physics", marks: 89 },
+    { name: "Hannah", age: 20, subject: "Chemistry", marks: 85 },
+    { name: "Ivy", age: 22, subject: "Biology", marks: 91 },
+    { name: "Jack", age: 24, subject: "Computer Science", marks: 87 }
+])
+
+db.faculty.insertMany([
+    { name: "Karen", age: 45, subject: "Mathematics", rating: 4.9 },
+    { name: "Leo", age: 50, subject: "Physics", rating: 4.7 },
+    { name: "Mona", age: 42, subject: "Chemistry", rating: 4.8 },
+    { name: "Nina", age: 48, subject: "Biology", rating: 4.6 },
+    { name: "Oscar", age: 55, subject: "Computer Science", rating: 4.9 }
+])
+
+db.student.updateMany(
+    {},  
+    { $set: { subject: "Data Science" } }  
+)
+
+db.student.updateMany(
+    {}, 
+    { $set: { address: "Chitkara University" } }  
+)
+
+db.student.find() 
+
+db.student.findOne() 
+
+db.student.find({ name: "Hannah" })   
+
+db.student.insertOne({ date: ISODate() })
+
+db.student.updateMany(
+    { marks: { $gte: 91 } }, 
+    { $set: { grade: "A++" } }  
+)
+
+//one more example
+db.student.updateMany(
+    { marks: { $gte: 86, $lte: 90 } },
+    { $set: { grade: "A+" } }
+)
