@@ -1,0 +1,24 @@
+//3 tasks
+// task1 to print students greater than particular marks and age
+// task2 to print students greater than equal to particular marks and age
+// task3 to print students with grade A++
+
+db.student.find(
+    { age: { $gt: 20 }, marks: { $gt: 85 } }
+)
+ 
+db.student.find(
+    { marks: { $gte: 90 }, age: { $gte: 20 } }
+)
+
+db.student.find(
+    { grade: "A++" }
+)
+
+//$and command.
+db.student.find({$and:[ {age:{$gt:22}}, {marks:{$gte:85}}]})
+
+//count command
+
+//estimated count
+db.collection.estimatedDocumentCount()
