@@ -1,0 +1,243 @@
+/* Styles for the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+nav img {
+  height: 140px;
+  width: 190px;
+}
+
+/* Styling for the navigation list */
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* List item styling */
+nav ul li {
+  margin: 0 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: #007BFF;
+}
+
+/* Button styling */
+nav button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+nav button:hover {
+  background-color: #0056b3;
+}
+
+/* General styles for hero section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #fdfaf4;
+  position: relative;
+}
+
+/* Left-side content (text) */
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  color: #191919;
+}
+
+.hero-content h6 {
+  font-size: 18px;
+  color: #6d6d6d;
+  margin-top: 20px;
+}
+
+/* Button styling */
+.cta-button {
+  margin-top: 30px;
+  padding: 12px 32px;
+  background-color: #191919;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #333333;
+}
+
+/* Right-side image */
+.hero-image img {
+  max-width: 500px;
+  height: auto;
+  position: relative;
+}
+
+/* Optional: Adding a small top border like in the example */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #191919;
+}
+/* Footer container */
+.footer {
+  background-color: #fdfaf4;
+  border-top: 1px solid #e1e1e1;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer content */
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Footer links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Each link in footer */
+.footer-links li {
+  margin: 10px 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #6d6d6d;
+  transition: color 0.3s;
+}
+
+/* Hover effect */
+.footer-links a:hover {
+  color: #191919;
+}
+
+
+
+
+/* login  */
+/* Container for authentication page */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fdfaf4;
+}
+
+/* Box holding the form */
+.auth-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Title of the form */
+.auth-box h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form structure */
+.auth-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.auth-form label {
+  font-size: 14px;
+  color: #6d6d6d;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+/* Submit button */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Toggle between Sign In/Sign Up */
+.toggle-form p {
+  font-size: 14px;
+  color: #6d6d6d;
+}
+
+.toggle-form span {
+  color: #007BFF;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.toggle-form span:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,234 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F7F4ED;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #191919;
+}
+
+nav ul li {
+  margin: 0 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: black;
+}
+
+nav button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+nav button:hover {
+  background-color: black;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #F7F4ED;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  color: #191919;
+}
+
+.hero-content h6 {
+  font-size: 18px;
+  color: #6d6d6d;
+  margin-top: 20px;
+}
+
+.cta-button {
+  margin-top: 30px;
+  padding: 12px 32px;
+  background-color: #191919;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #333333;
+}
+
+.hero-image img {
+  max-width: 500px;
+  height: auto;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #191919;
+}
+
+
+.footer {
+  background-color: #F7F4ED;
+  border-top: 1px solid black;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-links li {
+  margin: 10px 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #6d6d6d;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #191919;
+}
+
+
+
+
+/* login  */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fdfaf4;
+}
+
+/* Box holding the form */
+.auth-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Title of the form */
+.auth-box h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Form structure */
+.auth-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.auth-form label {
+  font-size: 14px;
+  color: #6d6d6d;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: black;
+}
+
+/* Submit button */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-btn:hover {
+  background-color: black;
+}
+
+.toggle-form p {
+  font-size: 14px;
+  color: #6d6d6d;
+}
+
+.toggle-form span {
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.toggle-form span:hover {
+  text-decoration: underline;
+}
